@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Refreshing Looker Studio Report</title>
+    <script>
+        // Refresh every 1 minute (60000 milliseconds)
+        setInterval(() => {
+            document.getElementById("lookerReport").src += "";
+        }, 60000);
+    </script>
+</head>
+<body>
+    <iframe 
+        id="lookerReport" 
+        src="https://lookerstudio.google.com/reporting/0114c110-7229-4581-897c-3135086b5dd7" 
+        width="100%" 
+        height="1000px" 
+        frameborder="0">
+    </iframe>
+</body>
+</html>
