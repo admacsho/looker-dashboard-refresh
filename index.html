@@ -7,7 +7,8 @@
     <script>
         // Refresh every 1 minute (60000 milliseconds)
         setInterval(() => {
-            document.getElementById("lookerReport").src += "";
+            const iframe = document.getElementById("lookerReport");
+            iframe.src = iframe.src; // Reloads the iframe source
         }, 60000);
     </script>
 </head>
